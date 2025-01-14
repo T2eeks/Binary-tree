@@ -1,4 +1,6 @@
 #include <iomanip>
+#include <iostream>
+#include <limits>
 
 #include "..\Header Files\Common.h"
 
@@ -12,6 +14,7 @@ int GetValue()
 	{
 		std::cin.clear();
 		std::cin.ignore(32767, '\n');
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		std::cout << "Enter digits \n";
 		return GetValue();
 	}
@@ -85,6 +88,8 @@ void BinaryTreeMenu(BinaryTree* binaryTree)
 					system("pause");
 					break;
 				}
+
+				std::cout << " Element in memory: " << found << std::endl;
 				system("pause");
 				break;
 			}
