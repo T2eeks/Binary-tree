@@ -1,7 +1,6 @@
 #include "..\Header Files/TreeNode.h" 
 #pragma once
 
-
 //! \brief Бинарное дерево
 struct BinaryTree
 {
@@ -40,6 +39,6 @@ public:
 
     //! \brief Получить корневой узел
     //! \return Указатель на корневой узел
-    TreeNode* GetRoot() const { return _root; }
+
 };
 
