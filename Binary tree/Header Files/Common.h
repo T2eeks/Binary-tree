@@ -19,8 +19,7 @@ void BinaryTreeMenu(BinaryTree* binaryTree);
 /// @param traep Указатель на узел дерева
 void TreapMenu(Treap* treap);
 
-/// @brief Функция отображения Декартового дерева
-///			на экране
+/// @brief Функция отображения Декартового дерева на экране
 /// 
 /// @param node		Указатиель на узел дерева
 /// @param indent	Отступ

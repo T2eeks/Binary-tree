@@ -1,14 +1,14 @@
 #include "..\Header Files/TreeNode.h" 
 #pragma once
-
 //! \brief Бинарное дерево
 struct BinaryTree
 {
 private:
+
     //! \brief Указатель на корневой узел дерева
     TreeNode* _root = nullptr;
-
 public:
+
     //! \brief Инициализация бинарного дерева
     void InitTree();
 
@@ -39,6 +39,5 @@ public:
 
     //! \brief Получить корневой узел
     //! \return Указатель на корневой узел
-
+    TreeNode* GetRoot() const { return _root; }
 };
-
